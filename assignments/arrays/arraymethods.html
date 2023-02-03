@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array methods</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+</body>
+<script>
+     const cars=["fiat "," BMW "," VW "," Hyundai "," Audi "]
+     document.getElementById("demo1").innerHTML=cars.toString()
+     document.getElementById("demo2").innerHTML=cars.join("*")
+     cars.push("Honda")
+     document.getElementById("demo3").innerHTML=cars
+     cars.pop()
+     document.getElementById("demo4").innerHTML=cars
+     cars.shift() //same as pop but in opposite direction from starting
+     document.getElementById("demo5").innerHTML=cars
+     cars.unshift("fiat") //same as push to add at starting
+     document.getElementById("demo6").innerHTML=cars
+     const cars2=[" jaguar "," Mahindra "]
+     document.getElementById("demo7").innerHTML=cars.concat(cars2)
+     cars.splice(2,0," Jaguar ", " Tata ")
+    document.getElementById("demo8").innerHTML = cars
+    document.getElementById("demo9").innerHTML=cars.slice(1)
+    // it can accept 2 parameters also like slice(from.to)
+    
+</script>
+</html>

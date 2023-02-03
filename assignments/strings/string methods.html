@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u>String Methods</u></h1>
+    <h2>length of kukna string is:</h2>
+    <p id="demo1"></p>
+    <h2>slice =</h2>
+    <p id="demo2"></p>
+    <h2>substr =</h2>
+    <p id="demo3"></p>
+    <h2>substring =</h2>
+    <p id="demo4"></p>
+    <h2>Replace method =</h2>
+    <p id="demo5"></p>
+    <h2>To upper case method =</h2>
+    <p id="demo6"></p>
+    <h2>To lower case method =</h2>
+    <p id="demo7"></p>
+    <h2>Concat strings</h2>
+    <p id="demo8"></p>
+    <h2>Trim method</h2>
+    <p id="demo9"></p>
+    <h2>Padding method</h2>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <h2>Character position</h2>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <h2>Split method</h2>
+    <p>This will create an array with string</p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+</body>
+<script>
+    let str1="kukna"
+    document.getElementById("demo1").innerHTML=str1.length
+    let str2="Hello welcome to string slice methods"
+    /* String slice()
+    String substring()
+    String substr() */
+    document.getElementById("demo2").innerHTML=str2.slice(0,6)
+    document.getElementById("demo3").innerHTML=str2.substr(6)
+    document.getElementById("demo4").innerHTML=str2.substring(6,13)
+    let str3 = "I\'m a seftware Engineer";
+    //here replace will only replace the first match from string
+    document.getElementById("demo5").innerHTML=str3.replace("seftware", "Software");
+    /*to replace all matching words out of a string instead of giving "word"
+    /word/g  global try this will work for all matches in a string*/
+    /* Replace is a case sensitive method to overcome this property use /i
+    insensitive tag just like before we used /g */
+    let str4="om prakash"
+    document.getElementById("demo6").innerHTML=str4.toUpperCase()
+    let str5="OFFWHITE"
+    document.getElementById("demo7").innerHTML=str5.toLowerCase()
+    let str6="Om"
+    let str7="Prakash"
+    document.getElementById("demo8").innerHTML=str6.concat(" ",str7)
+    let str8="   Om   "
+    let str9=str8.trim()
+    document.getElementById("demo9").innerHTML=str9.length
+    // trim is used for removing white spaces it can be trim(), trimStart() and trimEnd()
+    let str10 = "akash";
+    str10 = str10.padStart(7,"Pr");
+    document.getElementById("demo10").innerHTML = str10;
+    let str11="Pr"
+    document.getElementById("demo11").innerHTML=str11.padEnd(7,"akash")
+    let str12="kukna"
+    document.getElementById("demo12").innerHTML=str12.charAt(2)
+    document.getElementById("demo13").innerHTML=str12.charCodeAt(4)
+    document.getElementById("demo14").innerHTML=str12[1]
+    let str13="a,b,c,d,e"
+    let str14=str13.split(",")    // Split on commas
+    let str15=str13.split(" ")    // Split on spaces
+    let str16=str13.split("|")    // Split on pipe
+    document.getElementById("demo15").innerHTML=str14[0]
+    document.getElementById("demo16").innerHTML=str15[0]
+    document.getElementById("demo17").innerHTML=str16[0]
+</script>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String search methods</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+</body>
+<script>
+    let str1="om prakash kukna"
+    document.getElementById("demo1").innerHTML=str1.indexOf("a")
+    //...indexOf("a",12) will search for a after 12th position of string
+    document.getElementById("demo2").innerHTML=str1.lastIndexOf("a")
+    document.getElementById("demo3").innerHTML=str1.search("kukna")
+    document.getElementById("demo4").innerHTML=str1.match("akash")
+    // matchAll("akash") is there by using i and g we can filter more things
+    document.getElementById("demo5").innerHTML=str1.includes("kukna")
+    /* this will only return true and false with this we can give one 
+     position parameter also like str1.includes("kukna", 9) */
+    document.getElementById("demo6").innerHTML=str1.startsWith("om")
+    document.getElementById("demo7").innerHTML=str1.endsWith("kukna")
+</script>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Methods</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+</body>
+<script>
+    let x = 12345
+    document.getElementById("demo1").innerHTML=typeof(toString(x))
+    document.getElementById("demo2").innerHTML=x.toExponential(6)
+    document.getElementById("demo3").innerHTML=x.toFixed(2) //adds decimal
+    let y = 23.45
+    document.getElementById("demo4").innerHTML=y.toPrecision(3) //23.4
+    document.getElementById("demo5").innerHTML=y.valueOf()
+    
+</script>
+</html>

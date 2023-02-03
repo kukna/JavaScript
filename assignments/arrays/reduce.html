@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reduce in JavaScript</h1>
+    <p id="demo"></p>
+</body>
+<script>
+    const x = [1,2,3,4,5,6]
+    const y=x.reduce(fun)
+    // left to right operation
+    //reduceRight compiles right to left
+    function fun(total,value)
+    {
+        return total+value
+    }
+    document.getElementById("demo").innerHTML=y
+</script>
+</html>
