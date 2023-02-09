@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Set methods of dates in javascript</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+</body>
+<script>
+    const d=new Date()
+    d.setFullYear(1999)
+    d.setDate(28)
+    d.setMonth(06)
+    //d.setDate(d.getDate() + 5) adds 5 days to current date
+    d.setHours(16)
+    d.setMinutes(56)
+    d.setSeconds(02)
+    document.getElementById("demo1").innerHTML=d
+
+</script>
+</html>

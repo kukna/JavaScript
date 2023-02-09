@@ -8,11 +8,26 @@
 <body>
     <h1>Dates in JavaScript</h1>
     <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
 </body>
 <script>
     const d=new Date()
     const f = new Date(2018, 11, 24, 10, 33, 30, 0);
-    document.getElementById("demo").innerHTML=f
-
+    //year month date hour minutes seconds milliseconds
+    document.getElementById("demo").innerHTML=d
+    document.getElementById("demo2").innerHTML=d.toDateString()
+    // this toDateString allows more redability
+    document.getElementById("demo3").innerHTML = d.toUTCString();
+    // converts date to UTC standards
+    document.getElementById("demo4").innerHTML = d.toISOString();
+    // converts date to ISO standards
+    // const d = new Date("2015-03-25T12:00:00Z"); ISO time
+    // const d = new Date("2015-03-25T12:00:00-06:30"); for customizing UTC
+    const msec = Date.parse("March 21, 2012");
+    document.getElementById("demo5").innerHTML = msec;
+    // this will add milliseconds to 1 jan 1970 and outputs as milliseconds since
 </script>
 </html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Apply in JavaScript</h1>
+</body>
+<script>
+    const person = {
+        fullName:function(age){
+            return this.firstName+" "+this.lastName+" "+age+" years old"
+        }
+    }
+    const person1={
+        firstName:"Om",
+        lastName:"Prakash"
+    }
+    document.write(person.fullName.apply(person1,[23])+"<br>")
+    const maximum=[1,2,3,4,5]
+    document.write(Math.max.apply(null,maximum))
+    //Math.max.apply(" ", [1,2,3]) Will also return 3
+</script>
+</html>

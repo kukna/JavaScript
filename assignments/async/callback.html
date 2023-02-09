@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+<h2>Function Sequence</h2>
+<p>The result of the calculation is:</p>
+<p id="demo"></p>
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  myDisplayer(sum);
+}
+function add(x,y,Callback){
+    let addition=x+y
+    Callback(addition)
+}
+myCalculator(4,5)
+function disp(something){
+    document.write(something)
+}
+let res=add(4,5,disp)
+document.write(res())
+
+</script>
+</body>
+</html>

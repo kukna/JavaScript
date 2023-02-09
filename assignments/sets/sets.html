@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sets in JavaScript</h1>
+</body>
+<script>
+    const x = new Set([1,2,3,4,5])
+    x.add(6)
+    x.add(7)
+    document.write(x.size+"<br>")
+    x.delete(1)
+    document.write(x.size+"<br>")
+    let text=" "
+    x.forEach(function(values){
+        text+=values+" "
+    })
+    document.write(text)
+</script>
+</html>

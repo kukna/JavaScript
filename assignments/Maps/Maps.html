@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maps in JavaScript</h1>
+</body>
+<script>
+    const x = new Map([["KV",28],["APS",21],["DPS",18]])
+    document.write(x.get("KV")+"<br>")
+    x.set("NPS",27)
+    document.write(x.get("NPS")+"<br>")
+    x.delete("APS")
+    document.write(x.has("APS")+"<br>")
+    document.write(x.size+"<br>")
+    let text=""
+    x.forEach(function(value,key){
+        text+=key+" = "+value+"<br>"
+    })
+    document.write(text)
+    let text2=""
+    for(const i of x.entries()){
+        text2+=i+"<br>"
+    }
+    document.write(text2)
+</script>
+</html>

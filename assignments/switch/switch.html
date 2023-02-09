@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Switch cases in JavaScript</h1>
+    <p id="demo"></p>
+    </body>
+    <script>
+        var choice
+        const age = 18
+        let text
+        if(age<18){
+            choice=0
+         }
+        if(age>=18){
+            choice=1
+         }
+        if(age>60){
+            choice = 2
+         }
+        switch(choice){
+            case 0: text="you are too young"
+            break
+            case 1: text="you are adult"
+            break
+            case 2: text="you are senior citizen"
+            break
+            default:text="Enter correct format of age"
+        }
+        document.getElementById("demo").innerHTML=text
+    </script>
+</html>
